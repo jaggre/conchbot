@@ -23,4 +23,4 @@ if( badWords.some(word => message.content.includes(word)) ) {
     
 
 
-client.login();
+client.login(process.env.BOT_TOKEN);
