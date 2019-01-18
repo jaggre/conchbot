@@ -1,13 +1,17 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const prefix = "%";
 
 client.on("ready", () => {
   console.log("I am ready!");
 });
 
+const prefix
+
+
 client.on("message", (message) => {
 
-const badWords = ["%conch"];
+const badWords = ["conch"];
     
 const conchResponses = ["Maybe someday.", "Follow the seahorse.", "I don't think so.", "No." , "Yes.", "Try asking again." ];
 
@@ -30,7 +34,7 @@ client.on("message", (message) => {
 let when = randomDate(new Date(2019, 5, 23), new Date());
     
     
-    const reply = ["%when"];
+    const reply = ["when"];
 
 const replyResponses = [`Ask again on ${when}`]; 
     
