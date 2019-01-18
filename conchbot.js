@@ -35,10 +35,10 @@ let when = randomDate(new Date(2019, 5, 23), new Date());
     
     const reply = ["when"];
 
-const replyResponses = [`Ask again on ${when}`]; 
+const whenResponses = [`Ask again on ${when}`]; 
     
     if( reply.some(word => message.content.includes(word)) ) {
-  var response = replyResponses [Math.floor(Math.random()*replyResponses .length)];
+  var response = whenResponses [Math.floor(Math.random()*whenResponses .length)];
 
             message.channel.send(response).then().catch(console.error);
   // Or just do message.delete();
