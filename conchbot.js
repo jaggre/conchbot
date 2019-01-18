@@ -6,7 +6,6 @@ client.on("ready", () => {
   console.log("I am ready!");
 });
 
-const prefix
 
 
 client.on("message", (message) => {
