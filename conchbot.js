@@ -22,7 +22,7 @@ if( badWords.some(word => message.content.startsWith(prefix + word)) ) {
 }
 
     });
-    
+ /*   
 client.on("message", (message) => {
      
     
@@ -32,7 +32,7 @@ client.on("message", (message) => {
 
 let when = randomDate(new Date(2019, 5, 23), new Date());
     
-/*    
+ 
     const reply = ["when"];
 
 const whenResponses = [`Ask again on ${when}`]; 
