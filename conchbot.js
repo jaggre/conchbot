@@ -22,7 +22,7 @@ if( badWords.some(word => message.content.startsWith(prefix + word)) ) {
 }
 
     });
- /*   
+    
 client.on("message", (message) => {
      
     
@@ -30,7 +30,7 @@ client.on("message", (message) => {
     return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
 }
 
-let when = randomDate(new Date(2019, 5, 23), new Date());
+let when = randomDate(new Date(2019, 5, 23), new Date()).toLocaleDateString;
     
  
     const reply = ["when"];
@@ -49,7 +49,7 @@ const whenResponses = [`Ask again on ${when}`];
     
     
 
-  });   */ 
+  });   
 
 
 client.login(process.env.BOT_TOKEN);
