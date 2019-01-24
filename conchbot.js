@@ -30,7 +30,7 @@ client.on("message", (message) => {
     return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
 }
 
-let conchDate = randomDate(new Date(2019, 5, 23), new Date()).toLocaleString();
+let conchDate = randomDate(new Date(2019, 5, 23), new Date()).toLocaleDateStringString();
     
  
     const reply = ["when"];
