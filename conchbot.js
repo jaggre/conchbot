@@ -27,7 +27,7 @@ client.on("message", (message) => {
      
     
     function randomDate(start, end) {
-    return new Date.toLocaleString(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+    return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
 }
 
 let conchDate = randomDate.toLocaleString(new Date(2019, 5, 23), new Date());
