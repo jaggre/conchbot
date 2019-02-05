@@ -32,7 +32,7 @@ const blazeResponses = ["African broccoli","AK47","Alligator Cigarettes","Ammy",
 if( blazeWords.some(word => message.content.includes(prefix + word)) ) {
   var response = blazeResponses [Math.floor(Math.random()*blazeResponses .length)];
 
-            message.channel.send(`Damn, go smoke some of that {$response}`).then().catch(console.error);
+            message.channel.send(`Damn, go smoke some of that ${response}`).then().catch(console.error);
   // Or just do message.delete();
 }
 
