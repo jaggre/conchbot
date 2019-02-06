@@ -15,7 +15,7 @@ const badWords = ["conch"];
     
 const conchResponses = ["Maybe someday.", "Follow the seahorse.", "I don't think so.", "No." , "Yes.", "Try asking again." ];
 
-if( badWords.some(word => message.content.startsWith(prefix + word)) ) {
+if( badWords.some(word => message.content.includes(prefix + word)) ) {
   var response = conchResponses [Math.floor(Math.random()*conchResponses .length)];
 
             message.channel.send(response).then().catch(console.error);
@@ -55,7 +55,7 @@ let conchDate = randomDate(new Date(2019, 5, 23), new Date()).toLocaleDateString
 
 const whenResponses = [`Ask again on ${conchDate}`]; 
     
-    if( reply.some(word => message.content.startsWith(prefix + word)) ) {
+    if( reply.some(word => message.content.includes(prefix + word)) ) {
   var response = whenResponses [Math.floor(Math.random()*whenResponses .length)];
 
             message.channel.send(response).then().catch(console.error);
