@@ -4,11 +4,8 @@ const prefix = "%";
 
 client.on("ready", () => {
   console.log("I am ready!");
-<<<<<<< HEAD
-    client.user.setActivity('Looking for something to eat');
-=======
-    client.user.setGame('Trust the Magic Conch');
->>>>>>> e399369633c6c47454c584b1730f57b4a93681dd
+client.user.setActivity('Looking for something to eat');
+client.user.setGame('Trust the Magic Conch');
 });
 
 
