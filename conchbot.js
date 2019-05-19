@@ -1,12 +1,27 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const prefix = "%";
+const prefix = "#";
 
 client.on("ready", () => {
   console.log("I am ready!");
 client.user.setActivity('Looking for something to eat');
 client.user.setGame('Trust the Magic Conch');
 });
+
+client.on("message", (message) => {
+
+const conchWords = ["help"];
+    
+const conchResponses = ["My prefix is '#', my commands are 'conch,''blaze,'and 'when.'" ];
+
+if( conchWords.some(word => message.content.includes(prefix + word)) ) {
+  var response = conchResponses [Math.floor(Math.random()*conchResponses .length)];
+
+            message.channel.send(response).then().catch(console.error);
+  // Or just do message.delete();
+}
+
+    });
 
 
 
