@@ -86,7 +86,7 @@ client.on("message", (message) => {
 
 const cancelWords = ["cancelled"];
     
-const cancelResponses = ["Yes", "No", "Yes", "No." , "Yes.", "No" ];
+const cancelResponses = ["Yes, you are cancelled.", "No, you are not cancelled", "You are cancelled for asking if you are cancelled", "Do you even need to ask." , "Yes.", "No" ];
 
 if( cancelWords.some(word => message.content.includes(prefix + word)) ) {
   var response = cancelResponses [Math.floor(Math.random()*cancelResponses .length)];
