@@ -77,13 +77,25 @@ const whenResponses = [`Ask again on ${conchDate}`];
             message.channel.send(response).then().catch(console.error);
   // Or just do message.delete();
 }
-
-    
-
-    
     
 
   });   
+
+
+client.on("message", (message) => {
+
+const cancelWords = ["cancelled"];
+    
+const cancelResponses = ["Yes", "No", "Yes", "No." , "Yes.", "No" ];
+
+if( cancelWords.some(word => message.content.includes(prefix + word)) ) {
+  var response = cancelResponses [Math.floor(Math.random()*cancelResponses .length)];
+
+            message.channel.send(response).then().catch(console.error);
+  // Or just do message.delete();
+}
+
+    });
 
 
 client.login(process.env.BOT_TOKEN);
