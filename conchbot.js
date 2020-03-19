@@ -397,7 +397,9 @@ client.on("message", message => {
     "cum ",
     "Riley Reid ",
     "cum in face ",
-    "I am christ. "
+    "I am christ. ",
+    "ben mom ",
+    "ben gay "
   ];
 
   if (jiroWords.some(word => message.content.includes(prefix + word))) {
