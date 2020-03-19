@@ -402,23 +402,12 @@ client.on("message", message => {
       jiroResponses[Math.floor(Math.random() * jiroResponses.length)];
 
       message.channel
-      .send(response)
-      .send(response)
-      .send(response)
-      .send(response)
-      .send(response)
+      .send(response, response, response, response)
       .then()
       .catch(console.error);
 
      // Or just do message.delete();
   }
 });
-
-client.on(client.on('emojiCreate', (emoji) => {
-  var emojiAnnounce = ["A new emoji has just been added"]  ;
-  message.channel
-  .send(emojiAnnounce + emoji )
-  console.log(emoji);
-});)
 
 client.login(process.env.BOT_TOKEN);
