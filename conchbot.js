@@ -447,7 +447,7 @@ client.on("message", message => {
     "uhh dude women suck ",
     "FUCK THIS CCP PROPOGANDA ",
     "broads ",
-    "guys I'm off coke for good"
+    "guys I'm off coke for good",
     "dude I wouldn't sell opiods, it's against my conscious.",
     "ben gay "
   ];
