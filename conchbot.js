@@ -420,7 +420,7 @@ client.on("message", message => {
   var dashWords = ["dash"];
 
   var dashResponses = [
-    "chicken tenders"
+    "chicken tendies"
     
   ];
 
