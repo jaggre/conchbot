@@ -12,7 +12,7 @@ client.on("message", message => {
   const conchWords = ["help"];
 
   const conchResponses = [
-    "My prefix is '$', my commands are 'conch,''blaze,'and 'when.'"
+    "My prefix is '$', my commands are 'conch,''blaze,' 'jiro,' and 'when.'"
   ];
 
   if (conchWords.some(word => message.content.includes(prefix + word))) {
