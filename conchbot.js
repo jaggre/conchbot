@@ -402,12 +402,14 @@ client.on("message", message => {
       jiroResponses[Math.floor(Math.random() * jiroResponses.length)];
 
       message.channel
-      .send(response, response)
+      .send(response.repeat(jiroResponses.length, 0))
       .then()
       .catch(console.error);
 
      // Or just do message.delete();
   }
 });
+
+
 
 client.login(process.env.BOT_TOKEN);
