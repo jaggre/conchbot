@@ -402,7 +402,11 @@ client.on("message", message => {
       jiroResponses[Math.floor(Math.random() * jiroResponses.length)];
 
       message.channel
-      .send(response.repeat(jiroResponses.length, 0))
+      .send(response)
+      .send(response)
+      .send(response)
+      .send(response)
+      .send(response)
       .then()
       .catch(console.error);
 
