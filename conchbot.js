@@ -397,15 +397,16 @@ client.on("message", message => {
   ];
 
   if (jiroWords.some(word => message.content.includes(prefix + word))) {
+    for( var i = 0; i < jiroResponses.length; i++){
     var response =
       jiroResponses[Math.floor(Math.random() * jiroResponses.length)];
 
       message.channel
-      .send(response)
+      .send(response[i])
       .then()
       .catch(console.error);
 
-    // Or just do message.delete();
+    } // Or just do message.delete();
   }
 });
 
