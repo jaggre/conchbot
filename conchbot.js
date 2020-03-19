@@ -388,12 +388,12 @@ client.on("message", message => {
   var jiroWords = ["jiro"];
 
   var jiroResponses = [
-    "I like porn.",
-    "clit",
-    "gay",
-    "Obama bin Epstein",
-    "We all vote Biden",
-    "Porn gay."
+    "I like porn. ",
+    "clit ",
+    "gay ",
+    "Obama bin Epstein ",
+    "We all vote Biden ",
+    "Porn gay. "
   ];
 
   if (jiroWords.some(word => message.content.includes(prefix + word))) {
@@ -402,7 +402,8 @@ client.on("message", message => {
       jiroResponses[Math.floor(Math.random() * jiroResponses.length)];
 
       message.channel
-      .send(response.repeat(jiroResponses.length, 0))
+      .send(response.repeat(jiroResponses.length, 0): "
+      ")
       .then()
       .catch(console.error);
 
