@@ -444,8 +444,8 @@ client.on("message", message => {
 
   var alexResponses = [
     "now I don't hate minorities but ",
-    "uhh dude women suck ",
-    "FUCK THIS CCP PROPOGANDA ",
+    "uhh dude women suck",
+    "FUCK THIS CCP PROPOGANDA",
     "broads ",
     "guys I'm off coke for good",
     "dude I wouldn't sell opiods, it's against my conscious.",
