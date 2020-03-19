@@ -439,5 +439,32 @@ client.on("message", message => {
 });
 
 
+client.on("message", message => {
+  var alexWords = ["alex"];
+
+  var alexResponses = [
+    "now I don't hate minorities but ",
+    "uhh dude women suck ",
+    "FUCK THIS CCP PROPOGANDA ",
+    "broads ",
+    "guys I'm off coke for good"
+    "dude I wouldn't sell opiods, it's against my conscious.",
+    "ben gay "
+  ];
+
+  if (alexWords.some(word => message.content.includes(prefix + word))) {
+    
+    var response =
+      alexResponses[Math.floor(Math.random() * alexResponses.length)];
+
+      message.channel
+      .send(response.repeat
+      .then()
+      .catch(console.error);
+
+     // Or just do message.delete();
+  }
+});
+
 
 client.login(process.env.BOT_TOKEN);
