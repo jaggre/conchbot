@@ -414,6 +414,11 @@ client.on("message", message => {
   }
 });
 
-
+client.on(client.on('emojiCreate', (emoji) => {
+  var emojiAnnounce = ["A new emoji has just been added"]  ;
+  message.channel
+  .send(emojiAnnounce + emoji )
+  console.log(emoji);
+});)
 
 client.login(process.env.BOT_TOKEN);
