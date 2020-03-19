@@ -385,9 +385,9 @@ client.on("message", message => {
 
 
 client.on("message", message => {
-  const conchWords = ["jiro"];
+  var jiroWords = ["jiro"];
 
-  const conchResponses = [
+  var jiroResponses = [
     "I like porn.",
     "clit",
     "gay",
@@ -396,14 +396,16 @@ client.on("message", message => {
     "Porn gay."
   ];
 
-  if (conchWords.some(word => message.content.includes(prefix + word))) {
+  if (jiroWords.some(word => message.content.includes(prefix + word))) {
     var response =
-      conchResponses[Math.floor(Math.random() * conchResponses.length)];
+      jiroResponses[Math.floor(Math.random() * jiroResponses.length)];
 
-    message.channel
-      .send(response)
-      .then()
-      .catch(console.error);
+      for(var i=0; i<jiroResponses.length; i++){
+        message.channel
+        .send(response[i])
+        .then()
+        .cath(console.error)
+      }
     // Or just do message.delete();
   }
 });
