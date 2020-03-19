@@ -393,7 +393,10 @@ client.on("message", message => {
     "gay ",
     "Obama bin Epstein ",
     "We all vote Biden ",
-    "Porn gay. "
+    "Porn gay. ",
+    "cum ",
+    "Riley Reid ",
+    "cum in face "
   ];
 
   if (jiroWords.some(word => message.content.includes(prefix + word))) {
