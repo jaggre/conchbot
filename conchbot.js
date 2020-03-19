@@ -416,6 +416,28 @@ client.on("message", message => {
   }
 });
 
+client.on("message", message => {
+  var dashWords = ["dash"];
+
+  var dashResponses = [
+    "chicken tenders"
+    
+  ];
+
+  if (dashWords.some(word => message.content.includes(prefix + word))) {
+    
+    var response =
+      dashResponses[Math.floor(Math.random() * dashResponses.length)];
+
+      message.channel
+      .send(response.repeat(40, 0))
+      .then()
+      .catch(console.error);
+
+     // Or just do message.delete();
+  }
+});
+
 
 
 client.login(process.env.BOT_TOKEN);
