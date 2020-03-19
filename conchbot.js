@@ -400,12 +400,11 @@ client.on("message", message => {
     var response =
       jiroResponses[Math.floor(Math.random() * jiroResponses.length)];
 
-      for(var i=0; i<jiroResponses.length; i++){
-        message.channel
-        .send(response[i])
-        .then()
-        .cath(console.error)
-      }
+      message.channel
+      .send(response)
+      .then()
+      .catch(console.error);
+
     // Or just do message.delete();
   }
 });
