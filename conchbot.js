@@ -334,30 +334,6 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  const cancelWords = ["cancelled"];
-
-  const cancelResponses = [
-    "Yes, you are cancelled.",
-    "No, you are not cancelled",
-    "You are cancelled for asking if you are cancelled",
-    "Do you even need to ask.",
-    "Yes.",
-    "No"
-  ];
-
-  if (cancelWords.some(word => message.content.includes(prefix + word))) {
-    var response =
-      cancelResponses[Math.floor(Math.random() * cancelResponses.length)];
-
-    message.channel
-      .send(response)
-      .then()
-      .catch(console.error);
-    // Or just do message.delete();
-  }
-});
-
-client.on("message", message => {
   const uwuWords = ["uwu"];
 
   const uwuResponses = [
