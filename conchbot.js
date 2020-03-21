@@ -498,4 +498,48 @@ client.on("message", message => {
 });
 
 
+client.on("message", message => {
+  var edWords = ["ed"];
+
+  var friendNames =[
+    "Jake",
+    "Ed",
+    "Dash",
+    "Sam",
+    "Tim",
+    "Tahir",
+    "Alex",
+    "Rob"
+  ];
+
+
+
+  var edResponses = [
+    `${randFriend} drink`,
+    "On Jeff",
+    "bruh",
+    "Arcadia",
+    "You gotta come to the castle",
+    "If we're going to drink, we're going ot *drink*"
+  ];
+
+  if (edWords.some(word => message.content.includes(prefix + word))) {
+    
+var randFriend = 
+friendNames[Math.floor(Math.random() * friendNames.length)]
+
+    var response =
+      edResponses[Math.floor(Math.random() * edResponses.length)];
+
+      message.channel
+      .send(response)
+      .then()
+      .catch(console.error);
+
+     // Or just do message.delete();
+  }
+});
+
+
+
 client.login(process.env.BOT_TOKEN);
