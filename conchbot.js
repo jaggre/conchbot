@@ -480,7 +480,8 @@ client.on("message", message => {
     "I need to ask you a huuuuge favour ",
     "I need to use your bathroom",
     "that's definitely the best meme format of the past",
-    "Arcadia"
+    "Arcadia",
+    "bro, stop talking about my mom"
   ];
 
   if (benWords.some(word => message.content.includes(prefix + word))) {
