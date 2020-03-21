@@ -473,5 +473,30 @@ client.on("message", message => {
   }
 });
 
+client.on("message", message => {
+  var benWords = ["ben"];
+
+  var benResponses = [
+    "I need to ask you a huuuuge favour ",
+    "I need to use your bathroom",
+    "that's definitely the best meme format of the past",
+    "Arcadia"
+  ];
+
+  if (benWords.some(word => message.content.includes(prefix + word))) {
+    
+    var response =
+      benResponses[Math.floor(Math.random() * benResponses.length)];
+
+      message.channel
+      .send(response)
+      .then()
+      .catch(console.error);
+
+     // Or just do message.delete();
+  }
+});
+
+
 
 client.login(process.env.BOT_TOKEN);
