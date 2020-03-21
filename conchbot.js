@@ -400,7 +400,11 @@ client.on("message", message => {
   var dashWords = ["dash"];
 
   var dashResponses = [
-    "chicken tendies "
+    "chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies ",
+    "tahir ok just shut up about quincy dude",
+    "yeah i'll just stick to water tonight guys",
+    "anyone want a glass of milk?",
+    "whats the least popular thing"
     
   ];
 
@@ -410,7 +414,7 @@ client.on("message", message => {
       dashResponses[Math.floor(Math.random() * dashResponses.length)];
 
       message.channel
-      .send(response.repeat(40, 0))
+      .send(response.repeat
       .then()
       .catch(console.error);
 
@@ -426,6 +430,7 @@ client.on("message", message => {
     "now I don't hate minorities but ",
     "uhh dude women suck",
     "uhh dude broads suck",
+    "nah dude i'm down to my last three grams bro",
     "FUCK THIS CCP PROPOGANDA",
     "broads ",
     "dude I wouldn't sell opiods, it's against my conscious.",
@@ -459,6 +464,8 @@ client.on("message", message => {
     "gonna swing by my carrel and get some work done",
     "my thesis is really coming along",
     "yeah, i've got discord up right now",
+    "Nothing beats Nebraska",
+    "Dude I hate LA",
     "no cap"
   ];
 
