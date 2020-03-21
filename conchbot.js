@@ -482,6 +482,7 @@ client.on("message", message => {
     "that's definitely the best meme format of the past",
     "Arcadia",
     "bro, stop talking about my mom"
+    "*takes phonecall*"
   ];
 
   if (benWords.some(word => message.content.includes(prefix + word))) {
@@ -497,7 +498,6 @@ client.on("message", message => {
      // Or just do message.delete();
   }
 });
-
 
 
 client.login(process.env.BOT_TOKEN);
