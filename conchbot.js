@@ -456,7 +456,10 @@ client.on("message", message => {
     "Arcadia",
     "bro, stop talking about my mom",
     "*takes phonecall*",
-    "yeah, i've got discord up right now"
+    "gonna swing by my carrel and get some work done",
+    "my thesis is really coming along",
+    "yeah, i've got discord up right now",
+    "no cap"
   ];
 
   if (benWords.some(word => message.content.includes(prefix + word))) {
