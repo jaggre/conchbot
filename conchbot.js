@@ -491,7 +491,7 @@ client.on("message", message => {
 
 
   var edResponses = [
-    `${randFriend} drink`,
+    `${friendNames.random} drink`,
     // "On Jeff",
     // "bruh",
     // "On Swiss",
