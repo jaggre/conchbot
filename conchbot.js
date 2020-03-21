@@ -496,7 +496,8 @@ client.on("message", message => {
     "bruh",
     "On Swiss",
     "You gotta come to the castle",
-    "If we're going to drink, we're going to *drink*"
+    "If we're going to drink, we're going to *drink*",
+    "Does anyone have any coke?"
   ];
 
   if (edWords.some(word => message.content.includes(prefix + word))) {
