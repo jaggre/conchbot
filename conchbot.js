@@ -414,7 +414,7 @@ client.on("message", message => {
       dashResponses[Math.floor(Math.random() * dashResponses.length)];
 
       message.channel
-      .send(response.repeat
+      .send(response)
       .then()
       .catch(console.error);
 
