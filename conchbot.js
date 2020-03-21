@@ -393,12 +393,10 @@ client.on("message", message => {
     "gay ",
     "Obama bin Epstein ",
     "We all vote Biden ",
-<<<<<<< HEAD
-    "Porn gay. "
-    "Riley Reid "
-    "cum "
-    " "
-=======
+    "Porn gay. ",
+    "Riley Reid ",
+    "cum ",
+    " ",
     "Porn gay. ",
     "cum ",
     "Riley Reid ",
@@ -406,7 +404,6 @@ client.on("message", message => {
     "I am christ. ",
     "ben mom ",
     "ben gay "
->>>>>>> a210693668ff960a9d2d3eab8b5ef2f41df94960
   ];
 
   if (jiroWords.some(word => message.content.includes(prefix + word))) {
@@ -481,7 +478,7 @@ client.on("message", message => {
     "I need to use your bathroom",
     "that's definitely the best meme format of the past",
     "Arcadia",
-    "bro, stop talking about my mom"
+    "bro, stop talking about my mom",
     "*takes phonecall*"
   ];
 
