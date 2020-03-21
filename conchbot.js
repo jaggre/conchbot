@@ -479,7 +479,8 @@ client.on("message", message => {
     "that's definitely the best meme format of the past",
     "Arcadia",
     "bro, stop talking about my mom",
-    "*takes phonecall*"
+    "*takes phonecall*",
+    "yeah, i've got discord up right now"
   ];
 
   if (benWords.some(word => message.content.includes(prefix + word))) {
