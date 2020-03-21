@@ -520,6 +520,33 @@ friendNames[Math.floor(Math.random() * friendNames.length)]
   }
 });
 
+client.on("message", message => {
+  var jakeWords = ["jake"];
+
+  var jakeResponses = [
+    "Coachella",
+    "bro I was so high",
+    "I know Santa Ono dude",
+    "dude I was designing this one thing",
+    "dude the alibi room",
+    "this beer isn't that gross",
+    "fuck"
+  ];
+
+  if (jakeWords.some(word => message.content.includes(prefix + word))) {
+    
+    var response =
+      jakeResponses[Math.floor(Math.random() * jakeResponses.length)];
+
+      message.channel
+      .send(response)
+      .then()
+      .catch(console.error);
+
+     // Or just do message.delete();
+  }
+});
+
 
 
 client.login(process.env.BOT_TOKEN);
