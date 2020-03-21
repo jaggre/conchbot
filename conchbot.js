@@ -492,11 +492,11 @@ client.on("message", message => {
 
   var edResponses = [
     `${randFriend} drink`,
-    "On Jeff",
-    "bruh",
-    "Arcadia",
-    "You gotta come to the castle",
-    "If we're going to drink, we're going ot *drink*"
+    // "On Jeff",
+    // "bruh",
+    // "On Swiss",
+    // "You gotta come to the castle",
+    // "If we're going to drink, we're going to *drink*"
   ];
 
   if (edWords.some(word => message.content.includes(prefix + word))) {
