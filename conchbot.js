@@ -479,7 +479,7 @@ client.on("message", message => {
 
   var friendNames =[
     "Jake",
-    "Ed",
+    "Sam",
     "Dash",
     "Sam",
     "Tim",
@@ -491,12 +491,12 @@ client.on("message", message => {
 
 
   var edResponses = [
-    `${friendNames.random} drink`,
-    // "On Jeff",
-    // "bruh",
-    // "On Swiss",
-    // "You gotta come to the castle",
-    // "If we're going to drink, we're going to *drink*"
+    "Sam, drink",
+    "On Jeff",
+    "bruh",
+    "On Swiss",
+    "You gotta come to the castle",
+    "If we're going to drink, we're going to *drink*"
   ];
 
   if (edWords.some(word => message.content.includes(prefix + word))) {
