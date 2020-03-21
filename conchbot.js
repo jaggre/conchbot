@@ -505,6 +505,7 @@ client.on("message", message => {
     "On Jeff",
     "bruh",
     "On Swiss",
+    ${files:["https://us.rule34.xxx//images/704/4c486ca306498508cffa8956c85dad8a.png?3672079"]},
     "You gotta come to the castle",
     "If we're going to drink, we're going to *drink*",
     "Does anyone have any coke?"
