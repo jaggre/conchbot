@@ -537,7 +537,8 @@ client.on("message", message => {
     "does anyone have a switch?",
     "dude the alibi room",
     "this beer isn't that gross",
-    "fuck"
+    "fuck",
+    "MY FUCKING DAD"
   ];
 
   if (jakeWords.some(word => message.content.includes(prefix + word))) {
