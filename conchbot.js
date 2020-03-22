@@ -534,7 +534,7 @@ client.on("message", message => {
     "Coachella",
     "bro I was so high",
     "I know Santa Ono dude",
-    "dude I was designing this one thing",
+    "does anyone have a switch?",
     "dude the alibi room",
     "this beer isn't that gross",
     "fuck"
