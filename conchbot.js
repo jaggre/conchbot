@@ -361,66 +361,10 @@ client.on("message", message => {
 
 
 client.on("message", message => {
-  var jiroWords = ["jiro"];
-
-  var jiroResponses = [
-    "I like porn. ",
-    "clit ",
-    "gay ",
-    "Obama bin Epstein ",
-    "We all vote Biden ",
-    "Porn gay. ",
-    "Riley Reid ",
-    "cum ",
-    " ",
-    "Porn gay. ",
-    "cum ",
-    "Riley Reid ",
-    "cum in face ",
-    "I am christ. ",
-    "ben mom ",
-    "ben gay "
-  ];
-
-  if (jiroWords.some(word => message.content.includes(prefix + word))) {
-    
-    var response =
-      jiroResponses[Math.floor(Math.random() * jiroResponses.length)];
-
-      message.channel
-      .send(response.repeat(jiroResponses.length, 0))
-      .then()
-      .catch(console.error);
-
-     // Or just do message.delete();
-  }
+ 
 });
 
-client.on("message", message => {
-  var dashWords = ["dash"];
 
-  var dashResponses = [
-    "chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies ",
-    "tahir ok just shut up about quincy dude",
-    "yeah i'll just stick to water tonight guys",
-    "anyone want a glass of milk?",
-    "whats the least popular thing"
-    
-  ];
-
-  if (dashWords.some(word => message.content.includes(prefix + word))) {
-    
-    var response =
-      dashResponses[Math.floor(Math.random() * dashResponses.length)];
-
-      message.channel
-      .send(response)
-      .then()
-      .catch(console.error);
-
-     // Or just do message.delete();
-  }
-});
 
 
 client.on("message", message => {
@@ -449,9 +393,6 @@ client.on("message", message => {
 
      // Or just do message.delete();
   }
-});
-
-client.on("message", message => {
   var benWords = ["ben"];
 
   var benResponses = [
@@ -466,7 +407,8 @@ client.on("message", message => {
     "yeah, i've got discord up right now",
     "Nothing beats Nebraska",
     "Dude I hate LA",
-    "no cap"
+    "no cap",
+    "word"
   ];
 
   if (benWords.some(word => message.content.includes(prefix + word))) {
@@ -481,23 +423,34 @@ client.on("message", message => {
 
      // Or just do message.delete();
   }
-});
+  
+  var dashWords = ["dash"];
 
-
-client.on("message", message => {
-  var edWords = ["ed"];
-
-  var friendNames =[
-    "Jake",
-    "Sam",
-    "Dash",
-    "Sam",
-    "Tim",
-    "Tahir",
-    "Alex",
-    "Rob"
+  var dashResponses = [
+    "chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies chicken tendies ",
+    "tahir ok just shut up about quincy dude",
+    "yeah i'll just stick to water tonight guys",
+    "anyone want a glass of milk?",
+    "whats the least popular thing"
+    
   ];
 
+  if (dashWords.some(word => message.content.includes(prefix + word))) {
+    
+    var response =
+      dashResponses[Math.floor(Math.random() * dashResponses.length)];
+
+      message.channel
+      .send(response)
+      .then()
+      .catch(console.error);
+
+     // Or just do message.delete();
+  }
+
+
+
+  var edWords = ["ed"];
 
 
   var edResponses = [
@@ -525,9 +478,6 @@ friendNames[Math.floor(Math.random() * friendNames.length)]
 
      // Or just do message.delete();
   }
-});
-
-client.on("message", message => {
   var jakeWords = ["jake"];
 
   var jakeResponses = [
@@ -548,6 +498,39 @@ client.on("message", message => {
 
       message.channel
       .send(response)
+      .then()
+      .catch(console.error);
+
+     // Or just do message.delete();
+  }
+  var jiroWords = ["jiro"];
+
+  var jiroResponses = [
+    "I like porn. ",
+    "clit ",
+    "gay ",
+    "Obama bin Epstein ",
+    "We all vote Biden ",
+    "Porn gay. ",
+    "Riley Reid ",
+    "cum ",
+    " ",
+    "Porn gay. ",
+    "cum ",
+    "Riley Reid ",
+    "cum in face ",
+    "I am christ. ",
+    "ben mom ",
+    "ben gay "
+  ];
+
+  if (jiroWords.some(word => message.content.includes(prefix + word))) {
+    
+    var response =
+      jiroResponses[Math.floor(Math.random() * jiroResponses.length)];
+
+      message.channel
+      .send(response.repeat(jiroResponses.length, 0))
       .then()
       .catch(console.error);
 
