@@ -496,6 +496,7 @@ fellaNames[Math.floor(Math.random() * fellaNames.length)];
 var response =
 chugResponses.standard
 
+message.channel
 .send(response)
 .then()
 .catch(console.error)
