@@ -573,6 +573,7 @@ message.channel
   if (jiroWords.some(word => message.content.includes(prefix + word))) {
     
     var jiroCount = 0;
+    var jiroCount2 == jiroCount++;
 
     var response =
       jiroResponses[Math.floor(Math.random() * jiroResponses.length)];
@@ -581,7 +582,6 @@ message.channel
       .send(response.repeat(jiroResponses.length, 0))
       .then()
       .catch(console.error);
-      var jiroCount2 == jiroCount++;
 
       console.log(jiroCount2);
 
