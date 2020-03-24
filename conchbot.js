@@ -468,7 +468,7 @@ client.on("message", message => {
 // Ver 1. Random fella call out
 // Ver 2. 15 minutes later it tells you to scull your drink
 
-var chugWords = ["chug"]
+var chugWords = ["drink"]
 
 var fellaNames =[
   "Alex",
@@ -480,6 +480,7 @@ var fellaNames =[
   "Mark",
   "Moh",
   "Rob",
+  "Tahir",
   "Tim"
 ];
 
