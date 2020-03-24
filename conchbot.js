@@ -536,7 +536,7 @@ message.channel
 
   if (jakeWords.some(word => message.content.includes(prefix + word))) {
     
-    var jakeCount = 0;
+
 
     var response =
       jakeResponses[Math.floor(Math.random() * jakeResponses.length)];
@@ -545,7 +545,7 @@ message.channel
       .send(response)
       .then()
       .catch(console.error);
-      jakeCount++;
+  
 
      // Or just do message.delete();
   }
@@ -571,9 +571,7 @@ message.channel
   ];
 
   if (jiroWords.some(word => message.content.includes(prefix + word))) {
-    
-    var jiroCount = 0;
-    var jiroCount2 = jiroCount++;
+  
 
     var response =
       jiroResponses[Math.floor(Math.random() * jiroResponses.length)];
@@ -583,7 +581,7 @@ message.channel
       .then()
       .catch(console.error);
 
-      console.log(jiroCount2);
+      
 
      // Or just do message.delete();
   }
