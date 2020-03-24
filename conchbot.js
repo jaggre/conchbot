@@ -7,7 +7,13 @@ client.on("ready", () => {
   client.user.setActivity("Trust the Magic Conch!");
 });
 
+
+// Conch Listener 1
+
 client.on("message", message => {
+  
+  // Help command
+  
   const conchWords = ["help"];
 
   const conchResponses = [
@@ -24,9 +30,8 @@ client.on("message", message => {
       .catch(console.error);
     // Or just do message.delete();
   }
-});
+// Original conch Command
 
-client.on("message", message => {
   const conchWords = ["conch"];
 
   const conchResponses = [
@@ -48,9 +53,9 @@ client.on("message", message => {
       .catch(console.error);
     // Or just do message.delete();
   }
-});
 
-client.on("message", message => {
+// Weed Command
+
   const blazeWords = ["blaze"];
 
   const blazeResponses = [
@@ -302,7 +307,10 @@ client.on("message", message => {
       .catch(console.error);
     // Or just do message.delete();
   }
+
 });
+
+
 
 client.on("message", message => {
   function randomDate(start, end) {
@@ -365,8 +373,14 @@ client.on("message", message => {
 
 
 
+// Fella Shit Down Here
 
 client.on("message", message => {
+
+
+
+
+
   var alexWords = ["alex"];
 
   var alexResponses = [
@@ -430,7 +444,9 @@ client.on("message", message => {
     "tahir ok just shut up about quincy dude",
     "yeah i'll just stick to water tonight guys",
     "anyone want a glass of milk?",
-    "whats the least popular thing"
+    "thaaaaank you",
+    "What's the deal with music?",
+    "anyone want a firecracker?"
     
   ];
 
@@ -448,6 +464,43 @@ client.on("message", message => {
   }
 
 
+// Drink Command. Bot that mimics ed, commanding someone to drink. 
+// Ver 1. Random fella call out
+// Ver 2. 15 minutes later it tells you to scull your drink
+
+var chugWords = ["chug"]
+
+var fellaNames =[
+  "Alex",
+  "Ben",
+  "Dash",
+  "Ed",
+  "Jake",
+  "Jiro",
+  "Mark",
+  "Moh",
+  "Rob",
+  "Tim"
+];
+
+var chugResponses = {
+  sandard: `${fellaChug},drink`
+};
+
+
+if (chugWords.some(word => message.content.includes(prefix + word))) {
+
+  var fellaChug =
+fellaNames[Math.floor(Math.random() * fellaNames.length)];
+
+var response =
+chugResponses.standard
+
+.send(response)
+.then()
+.catch(console.error)
+
+}
 
   var edWords = ["ed"];
 
@@ -521,6 +574,8 @@ client.on("message", message => {
 
   if (jiroWords.some(word => message.content.includes(prefix + word))) {
     
+    var jiroCount = 0;
+
     var response =
       jiroResponses[Math.floor(Math.random() * jiroResponses.length)];
 
@@ -528,10 +583,13 @@ client.on("message", message => {
       .send(response.repeat(jiroResponses.length, 0))
       .then()
       .catch(console.error);
+      jiroCount++;
 
      // Or just do message.delete();
   }
 });
+
+
 
 
 
