@@ -14,15 +14,15 @@ client.on("message", message => {
   
   // Help command
   
-  const conchWords = ["help"];
+  const conchHelpWords = ["help"];
 
-  const conchResponses = [
+  const conchHelpResponses = [
     "My prefix is '$', my commands are 'conch,''blaze,' 'jiro,' and 'when.'"
   ];
 
-  if (conchWords.some(word => message.content.includes(prefix + word))) {
+  if (conchHelpWords.some(word => message.content.includes(prefix + word))) {
     var response =
-      conchResponses[Math.floor(Math.random() * conchResponses.length)];
+      conchHelpResponses[Math.floor(Math.random() * conchHelpResponses.length)];
 
     message.channel
       .send(response)
