@@ -484,7 +484,7 @@ var fellaNames =[
 ];
 
 var chugResponses = {
-  sandard: `${fellaChug},drink`
+  standard: `${fellaChug},drink`
 };
 
 
