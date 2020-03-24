@@ -581,8 +581,8 @@ message.channel
       .send(response.repeat(jiroResponses.length, 0))
       .then()
       .catch(console.error);
-      .jiroCount++;
-      .console.log(jiroCount);
+      jiroCount++;
+      console.log(jiroCount);
 
      // Or just do message.delete();
   }
