@@ -483,10 +483,6 @@ var fellaNames =[
   "Tim"
 ];
 
-var chugResponses = {
-  standard: `${fellaChug},drink`
-};
-
 
 if (chugWords.some(word => message.content.includes(prefix + word))) {
 
@@ -497,7 +493,7 @@ var response =
 chugResponses.standard
 
 message.channel
-.send(response)
+.send(`${fellaChug}, drink.`)
 .then()
 .catch(console.error)
 
