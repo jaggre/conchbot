@@ -489,9 +489,6 @@ if (chugWords.some(word => message.content.includes(prefix + word))) {
   var fellaChug =
 fellaNames[Math.floor(Math.random() * fellaNames.length)];
 
-var response =
-chugResponses.standard
-
 message.channel
 .send(`${fellaChug}, drink.`)
 .then()
