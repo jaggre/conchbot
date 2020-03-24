@@ -4,7 +4,7 @@ const prefix = "$";
 
 client.on("ready", () => {
   console.log("I am ready!");
-  client.user#setActivity("Trust the Magic Conch!");
+  client.user.setActivity("Trust the Magic Conch!");
 });
 
 client.on("message", message => {
