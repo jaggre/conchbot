@@ -536,6 +536,8 @@ message.channel
 
   if (jakeWords.some(word => message.content.includes(prefix + word))) {
     
+    var jakeCount = 0;
+
     var response =
       jakeResponses[Math.floor(Math.random() * jakeResponses.length)];
 
@@ -543,6 +545,7 @@ message.channel
       .send(response)
       .then()
       .catch(console.error);
+      jakeCount++;
 
      // Or just do message.delete();
   }
@@ -578,14 +581,12 @@ message.channel
       .send(response.repeat(jiroResponses.length, 0))
       .then()
       .catch(console.error);
-      jiroCount++;
+      .jiroCount++;
+      .console.log(jiroCount);
 
      // Or just do message.delete();
   }
 });
-
-
-
 
 
 client.login(process.env.BOT_TOKEN);
