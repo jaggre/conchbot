@@ -4,8 +4,7 @@ const prefix = "$";
 
 client.on("ready", () => {
   console.log("I am ready!");
-  client.user.setActivity("Looking for something to eat");
-  client.user.setGame("Trust the Magic Conch");
+  client.user#setActivity("Trust the Magic Conch!");
 });
 
 client.on("message", message => {
@@ -464,9 +463,6 @@ client.on("message", message => {
   ];
 
   if (edWords.some(word => message.content.includes(prefix + word))) {
-    
-var randFriend = 
-friendNames[Math.floor(Math.random() * friendNames.length)]
 
     var response =
       edResponses[Math.floor(Math.random() * edResponses.length)];
