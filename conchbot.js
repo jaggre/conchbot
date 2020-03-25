@@ -585,6 +585,36 @@ message.channel
 
      // Or just do message.delete();
   }
+
+  var tahirWords = ["tahir"];
+
+  var tahirResponses = [
+    "Sorry dude just at the gym right now",
+    "Hey man, sorry I gotta go to this networking thing. ",
+    "Sorry dude just at a meeting right now",
+    "Sorry dude just gotta meet with the investment committee right now",
+    "Dude, RBC is such a good client.",
+    "What stocks are we picking fellas?",
+    "I just spent $1000 on a J. Crew Sale ",
+    "Dude, the AMS."
+  ];
+
+  if (tahirWords.some(word => message.content.includes(prefix + word))) {
+  
+
+    var response =
+      tahirResponses[Math.floor(Math.random() * tahirResponses.length)];
+
+      message.channel
+      .send(response)
+      .then()
+      .catch(console.error);
+
+      
+
+     // Or just do message.delete();
+  }
+
 });
 
 
