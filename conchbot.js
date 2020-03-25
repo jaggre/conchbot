@@ -596,6 +596,8 @@ message.channel
     "Dude, RBC is such a good client.",
     "What stocks are we picking fellas?",
     "I just spent $1000 on a J. Crew Sale ",
+    "yeah i'd love to come its just that i have my cousin's wedding this weekend",
+    "I'm gonna stop smoking weed this year I swear!!",
     "Dude, the AMS."
   ];
 
