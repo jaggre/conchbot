@@ -586,7 +586,7 @@ message.channel
      // Or just do message.delete();
   }
 
-  var tahirWords = ["tahir"];
+  var tahirWords = ["tahir","ty"];
 
   var tahirResponses = [
     "Sorry dude just at the gym right now",
