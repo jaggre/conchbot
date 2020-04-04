@@ -624,10 +624,9 @@ message.channel
 "https://i.imgur.com/a468AQO.jpg",
 "https://i.imgur.com/GD2tveW.jpg",
 "https://i.imgur.com/LdP1fqj.jpg",
-"https://i.imgur.com/G0ZMh9L.jpg"] 
- ];
+"https://i.imgur.com/G0ZMh9L.jpg"]];
 
- if pornographicImagery.some(word => message.content.includes(prefix + word))) {
+ if pornWords.some(word => message.content.includes(prefix + word))) {
 
 
   var response = 
