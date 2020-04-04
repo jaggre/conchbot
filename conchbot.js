@@ -627,7 +627,7 @@ message.channel
    {files: ["https://i.imgur.com/G0ZMh9L.jpg"]}
 ];
  
-  if pornWords.some(word => message.content.includes(prefix + word))) {
+  if (pornWords.some(word => message.content.includes(prefix + word))) {
  
  
    var response = 
