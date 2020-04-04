@@ -617,7 +617,7 @@ message.channel
      // Or just do message.delete();
   }
 
-  var pornWords = ["porn"];
+  var pornographicWords = ["porn"];
 
   var pornographicImagery = [
    {files: ["https://i.imgur.com/r2aepqj.jpg"]},
@@ -627,7 +627,7 @@ message.channel
    {files: ["https://i.imgur.com/G0ZMh9L.jpg"]}
 ];
  
-  if (pornWords.some(word => message.content.includes(prefix + word))) {
+if (pornographicWords.some(word => message.content.includes(prefix + word))) {
  
  
    var response = 
