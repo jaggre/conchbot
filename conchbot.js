@@ -373,7 +373,7 @@ client.on("message", message => {
 
 
 
-// Fella Shit Down Here
+// Fella Shit Down Here - Listener 2
 
 client.on("message", message => {
 
@@ -617,7 +617,36 @@ message.channel
      // Or just do message.delete();
   }
 
+ var pornWords = ["porn"];
+
+ var pornographicImagery = [
+  files: ["https://i.imgur.com/r2aepqj.jpg",
+"https://i.imgur.com/a468AQO.jpg",
+"https://i.imgur.com/GD2tveW.jpg",
+"https://i.imgur.com/LdP1fqj.jpg",
+"https://i.imgur.com/G0ZMh9L.jpg"] 
+ ];
+
+ if pornographicImagery.some(word => message.content.includes(prefix + word))) {
+
+
+  var response = 
+  pornographicImagery[Math.floor(Math.random() * pornographicImagery.length)];
+
+  message.channel
+  .send(response)
+  .then()
+  .catch(console.error);
+
+ }
+
+
+
+
 });
+
+
+
 
 
 client.login(process.env.BOT_TOKEN);
