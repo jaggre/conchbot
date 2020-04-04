@@ -617,28 +617,29 @@ message.channel
      // Or just do message.delete();
   }
 
- var pornWords = ["porn"];
+  var pornWords = ["porn"];
 
- var pornographicImagery = [
-  files: ["https://i.imgur.com/r2aepqj.jpg",
-"https://i.imgur.com/a468AQO.jpg",
-"https://i.imgur.com/GD2tveW.jpg",
-"https://i.imgur.com/LdP1fqj.jpg",
-"https://i.imgur.com/G0ZMh9L.jpg"]];
-
- if pornWords.some(word => message.content.includes(prefix + word))) {
-
-
-  var response = 
-  pornographicImagery[Math.floor(Math.random() * pornographicImagery.length)];
-
-  message.channel
-  .send(response)
-  .then()
-  .catch(console.error);
-
- }
-
+  var pornographicImagery = [
+   {files: ["https://i.imgur.com/r2aepqj.jpg"]},
+   {files: ["https://i.imgur.com/a468AQO.jpg"]},
+   {files: ["https://i.imgur.com/GD2tveW.jpg"]},
+   {files: ["https://i.imgur.com/LdP1fqj.jpg"]},
+   {files: ["https://i.imgur.com/G0ZMh9L.jpg"]}
+];
+ 
+  if pornWords.some(word => message.content.includes(prefix + word))) {
+ 
+ 
+   var response = 
+   pornographicImagery[Math.floor(Math.random() * pornographicImagery.length)];
+ 
+   message.channel
+   .send(response)
+   .then()
+   .catch(console.error);
+ 
+  }
+ 
 
 
 
